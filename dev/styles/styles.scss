@@ -1,0 +1,228 @@
+@import "partials/setup";
+@import "partials/home";
+@import "partials/project";
+@import "partials/variables";
+
+body {
+	background-color: $secondary-navy;
+}
+
+// main headers
+h1 { 
+	font-family: brix-slab, serif;
+	font-weight: 300;
+	font-style: normal;
+	color: $primary-header;
+	font-size: 3.75em;
+}
+
+h2 {
+	font-family: brix-slab, serif;
+	font-weight: 300;
+	color: $primary-header;
+	font-size: 3.5em;
+	margin-bottom: 0.938em;
+	text-align: center;
+}
+
+h3 {
+	font-family: brix-slab, serif;
+	font-weight: 300;
+	font-style: normal;
+	color: $primary-header;
+	font-size: 2.188em;
+	margin-bottom: 0.313em;
+}
+
+h4 {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.063em;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	color: $secondary-header;
+	line-height: 1.5em;
+}
+
+h5 {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 0.813em;
+	color: #abc8f8;
+	margin: 0.5em 0;
+}
+
+// body text
+p {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-size: 1.063em;
+	line-height: 1.375em;
+	padding-bottom: 1.563em;
+}
+
+// lists
+ul {
+	margin: 0;
+	padding: 0.313em 0 1.25em 0;
+	color: white;
+	font-family: proxima-nova, sans-serif;
+	font-size: 1.063em;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.numbered-list {
+	list-style-type:none;
+	font-size: 1.25em;
+	line-height: 1.75em;
+	margin: 2.5em;
+}
+
+// forms
+label {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: white;
+	font-size: 0.813em;
+	text-transform: uppercase;
+	letter-spacing: 0.188em;
+	padding: 0.625em 0;
+}
+
+input {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 2px;
+	padding: 0.813em 1.25em;
+	color: white;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	margin-bottom: 0.625em;
+	width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+	color: $accent-blue;
+	font-family: proxima-nova, sans-serif;
+	font-size: 1em;
+}
+
+textarea {
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 2px;
+	height: 12.5em;
+	width: 100%;
+	padding: 0.813em 2.5em;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	margin: 0.625em 0 1.25em 0;
+}
+
+// buttons
+.button-wrapper {
+	width: 100%;
+}
+
+.button-link {
+	display: inline-block;
+	width: calc(50% - 1.25em);
+	text-align: center;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+	font-size: 0.875em;
+	background-color: $accent-blue;
+	padding: 1em 0.6em;
+	margin: 0 0.156em;
+	color: $primary-navy;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 50px;
+	letter-spacing: 0.063em;
+
+	&:hover {
+		background-color: $secondary-header;
+		transition: 0.3s ease-in;
+		color: black;
+		text-decoration: none;
+	}
+
+	&.deactivated {
+		opacity: 0.5;
+		pointer-events: none;
+		cursor: default;
+		color: black;
+	}
+}
+
+.button-expand {
+	background-color: $accent-blue;
+	border: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	color: $primary-navy;
+	margin-top: 0;
+	@extend %textLinks;
+}
+
+// quotes
+blockquote {
+	font-family: brix-slab, serif;
+	font-size: 2.25em;
+	font-weight: 400;
+	color: $secondary-header;
+	line-height: 1.25em;
+	padding: 7.5em 0 7.5em 7.5em;
+	width: 24.375em;
+}
+
+// global sections
+section {
+	@extend %contentPadding;
+}
+
+// media queries
+@media screen and (min-width: 1400px) {
+	h2 {
+		font-size: 3.875em;
+	}
+
+	h3 {
+		font-size: 2.625em;
+	}
+
+	h4 {
+		font-size: 1.063em;
+	}
+
+	h5 {
+		font-size: 0.813em;
+	}
+}
+
+@media screen and (max-width: 890px){
+	h2 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 480px){
+	h2 {
+		font-size: 2.750em;
+	}
+
+	h3 {
+		font-size: 1.750em;
+	}
+}
