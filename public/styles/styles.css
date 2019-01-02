@@ -393,9 +393,20 @@ nav {
     max-width: 63em;
     margin: 0 auto; }
   .about-image img {
-    width: 20.5em; }
+    width: 20em; }
   .about-text {
-    margin-left: 3.125em; }
+    margin-left: 3.125em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 2em; }
 
 .skills {
   background-image: url("../../../images/ocean_shores.jpg");
@@ -554,11 +565,6 @@ nav {
   .portfolio-item.mercyheart {
     background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/charity.jpg");
     background: linear-gradient(#c53923, #00065d), url("../../../images/charity.jpg");
-    background-size: cover;
-    background-position: center; }
-  .portfolio-item.motivator {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/letters.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/letters.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.fieldtrip {
@@ -760,36 +766,6 @@ button {
     min-width: 2.5em; }
   .portfolio-item {
     height: 18.125em; }
-    .portfolio-item.scpartners {
-      background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/bridge.jpg");
-      background: linear-gradient(#00065d, #00065d), url("../../../images/bridge.jpg");
-      background-position: bottom;
-      background-size: cover; }
-    .portfolio-item.safeaway {
-      background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/airplane.jpg");
-      background: linear-gradient(#8b2801, #8b2801), url("../../../images/airplane.jpg");
-      background-position: bottom;
-      background-size: cover; }
-    .portfolio-item.jobify {
-      background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/keyboard.jpg");
-      background: linear-gradient(#00065d, #00065d), url("../../../images/keyboard.jpg");
-      background-position: bottom;
-      background-size: cover; }
-    .portfolio-item.mercyheart {
-      background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/charity.jpg");
-      background: linear-gradient(#8b2801, #8b2801), url("../../../images/charity.jpg");
-      background-position: bottom;
-      background-size: cover; }
-    .portfolio-item.motivator {
-      background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/letters.jpg");
-      background: linear-gradient(#00065d, #00065d), url("../../../images/letters.jpg");
-      background-position: bottom;
-      background-size: cover; }
-    .portfolio-item.fieldtrip {
-      background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/students.jpg");
-      background: linear-gradient(#8b2801, #8b2801), url("../../../images/students.jpg");
-      background-position: bottom;
-      background-size: cover; }
     .portfolio-item .info h3 {
       padding: 1em 0 0.625em 0;
       font-size: 2.25em; }
