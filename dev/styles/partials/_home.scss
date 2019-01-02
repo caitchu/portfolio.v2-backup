@@ -203,11 +203,15 @@ nav {
 	}
 
 	&-image img {
-		width: 20.5em;
+		width: 20em;
 	}
 
 	&-text {
 		margin-left: 3.125em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 2em;
 	}
 }
 
@@ -373,15 +377,6 @@ nav {
 		    rgba(197, 57, 35, 1),
 		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/charity.jpg');
-		background-size: cover;
-		background-position: center;
-	}
-
-	&.motivator {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/letters.jpg');
 		background-size: cover;
 		background-position: center;
 	}
@@ -650,60 +645,6 @@ button {
 
 	.portfolio-item {
 		height: 18.125em;
-
-		&.scpartners {
-			background: linear-gradient(
-			    rgba(0, 6, 93, 1),
-			    rgba(0, 6, 93, 1),
-			  ), url('../../../images/bridge.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
-
-		&.safeaway {
-			background: linear-gradient(
-			    rgba(139,40,1, 1),
-			    rgba(139,40,1, 1)
-			  ), url('../../../images/airplane.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
-
-		&.jobify {
-			background: linear-gradient(
-			    rgba(0, 6, 93, 1),
-			    rgba(0, 6, 93, 1)
-			  ), url('../../../images/keyboard.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
-
-		&.mercyheart {
-			background: linear-gradient(
-			    rgba(139,40,1, 1),
-			    rgba(139,40,1, 1),
-			  ), url('../../../images/charity.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
-
-		&.motivator {
-			background: linear-gradient(
-			    rgba(0, 6, 93, 1),
-			    rgba(0, 6, 93, 1),
-			  ), url('../../../images/letters.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
-
-		&.fieldtrip {
-			background: linear-gradient(
-			    rgba(139,40,1, 1),
-			    rgba(139,40,1, 1)
-			  ), url('../../../images/students.jpg');
-			background-position: bottom;
-			background-size: cover;
-		}
 
 		& .info h3 {
 			padding: 1em 0 0.625em 0;
