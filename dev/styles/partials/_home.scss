@@ -150,7 +150,7 @@ nav {
 
 .hero-text {
 	text-align: center;
-	height: calc(80vh - 17em);
+	height: calc(80vh - 12em);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -159,7 +159,8 @@ nav {
 		font-weight: 300;
 		font-style: normal;
 		color: $primary-header;
-		font-size: 6.5em;
+		font-size: 6em;
+		text-transform: uppercase;
 	}
 
 	h2 {
@@ -167,10 +168,10 @@ nav {
 		font-weight: 600;
 		font-style: normal;
 		color: $secondary-header;
-		font-size: 1.5em;
+		font-size: 1.25em;
 		padding: 0.3em;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.2em;
 	}
 }
 
@@ -310,7 +311,7 @@ nav {
 .work-content {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 65.5em;
+	max-width: 64em;
 }
 
 .work-grid {
@@ -333,17 +334,26 @@ nav {
 
 	&.scpartners {
 		background: linear-gradient(
-		    rgba(0, 6, 93, 1),
-		    rgba(0, 6, 93, 1),
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/bridge.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&.indus {
+		background: linear-gradient(
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
+		  ), url('../../../images/construction.jpg');
 		background-size: cover;
 		background-position: center;
 	}
 
 	&.safeaway {
 		background: linear-gradient(
-		    rgba(139,40,1, 1),
-		    rgba(139,40,1, 1)
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/airplane.jpg');
 		background-size: cover;
 		background-position: center;
@@ -351,8 +361,8 @@ nav {
 
 	&.jobify {
 		background: linear-gradient(
-		    rgba(139,40,1, 1),
-		    rgba(139,40,1, 1)
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/keyboard.jpg');
 		background-size: cover;
 		background-position: center;
@@ -360,8 +370,8 @@ nav {
 
 	&.mercyheart {
 		background: linear-gradient(
-		    rgba(0, 6, 93, 1),
-		    rgba(0, 6, 93, 1),
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/charity.jpg');
 		background-size: cover;
 		background-position: center;
@@ -369,8 +379,8 @@ nav {
 
 	&.motivator {
 		background: linear-gradient(
-		    rgba(0, 6, 93, 1),
-		    rgba(0, 6, 93, 1),
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/letters.jpg');
 		background-size: cover;
 		background-position: center;
@@ -378,8 +388,8 @@ nav {
 
 	&.fieldtrip {
 		background: linear-gradient(
-		    rgba(139,40,1, 1),
-		    rgba(139,40,1, 1)
+		    rgba(197, 57, 35, 1),
+		    rgba(0, 6, 93, 1)
 		  ), url('../../../images/students.jpg');
 		background-size: cover;
 		background-position: center;
@@ -452,10 +462,12 @@ nav {
 .contact-content {
 	max-width: 63em;
 	margin: 0 auto;
+	justify-content: center;
 }
 
 .contact-content-flex-wrapper {
 	display: flex;
+	justify-content: center;
 
 	p {
 		width: 30%;
@@ -625,7 +637,7 @@ button {
 		}
 	}
 
-	.contact-content-flex-wrapper {
+	.contact-content {
 		max-width: 56em;
 	}
 } // max-width: 1440px

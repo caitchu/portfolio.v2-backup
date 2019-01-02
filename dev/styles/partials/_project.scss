@@ -64,8 +64,12 @@
 	}
 
 	.bullet-list li {
-		list-style-type: lower-latin;
+		list-style-type: disc;
 		margin-left: 1.063em;
+		padding-bottom: 0.5em;
+		// font-family: brix-slab, serif;
+		font-size: 1em;
+		// font-style: italic;
 	}
 }
 
@@ -74,6 +78,16 @@
 		max-width: 61.25em;
 		margin: 0 auto;
 		position: relative;
+	}
+
+	.opening-paragraph {
+		font-family: brix-slab, serif;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+
+	.notes {
+		font-size: 0.8em;
 	}
 }
 
@@ -115,6 +129,14 @@
 	.text-wrapper {
 		max-width: 37.5em;
 	}
+
+	.code-text-wrapper h4 {
+		padding: 1em 0 0.5em 0;
+	}
+}
+
+.gist-data {
+	max-height: 400px;
 }
 
 .columns-wrapper {

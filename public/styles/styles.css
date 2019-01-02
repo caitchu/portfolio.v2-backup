@@ -340,7 +340,7 @@ nav {
 
 .hero-text {
   text-align: center;
-  height: calc(80vh - 17em);
+  height: calc(80vh - 12em);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,16 +355,17 @@ nav {
     font-weight: 300;
     font-style: normal;
     color: #ffffff;
-    font-size: 6.5em; }
+    font-size: 6em;
+    text-transform: uppercase; }
   .hero-text h2 {
     font-family: proxima-nova, sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #f79c7d;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 0.3em;
     text-transform: uppercase;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.2em; }
 
 .body-content {
   background-color: #193893;
@@ -498,7 +499,7 @@ nav {
 .work-content {
   margin: 0 auto;
   width: 100%;
-  max-width: 65.5em; }
+  max-width: 64em; }
 
 .work-grid {
   display: -webkit-box;
@@ -531,33 +532,38 @@ nav {
   padding: 1.875em 1.563em;
   background-blend-mode: multiply; }
   .portfolio-item.scpartners {
-    background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/bridge.jpg");
-    background: linear-gradient(#00065d, #00065d), url("../../../images/bridge.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/bridge.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/bridge.jpg");
+    background-size: cover;
+    background-position: center; }
+  .portfolio-item.indus {
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/construction.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/construction.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.safeaway {
-    background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/airplane.jpg");
-    background: linear-gradient(#8b2801, #8b2801), url("../../../images/airplane.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/airplane.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/airplane.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.jobify {
-    background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/keyboard.jpg");
-    background: linear-gradient(#8b2801, #8b2801), url("../../../images/keyboard.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/keyboard.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/keyboard.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.mercyheart {
-    background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/charity.jpg");
-    background: linear-gradient(#00065d, #00065d), url("../../../images/charity.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/charity.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/charity.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.motivator {
-    background: -webkit-gradient(linear, left top, left bottom, from(#00065d), to(#00065d)), url("../../../images/letters.jpg");
-    background: linear-gradient(#00065d, #00065d), url("../../../images/letters.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/letters.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/letters.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item.fieldtrip {
-    background: -webkit-gradient(linear, left top, left bottom, from(#8b2801), to(#8b2801)), url("../../../images/students.jpg");
-    background: linear-gradient(#8b2801, #8b2801), url("../../../images/students.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/students.jpg");
+    background: linear-gradient(#c53923, #00065d), url("../../../images/students.jpg");
     background-size: cover;
     background-position: center; }
   .portfolio-item .title {
@@ -604,12 +610,18 @@ nav {
 
 .contact-content {
   max-width: 63em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .contact-content-flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .contact-content-flex-wrapper p {
     width: 30%;
     margin-right: 2.5em;
@@ -739,7 +751,7 @@ button {
       margin-top: 1.5em; }
     .portfolio-item .info ul li {
       font-size: 0.85em; }
-  .contact-content-flex-wrapper {
+  .contact-content {
     max-width: 56em; } }
 
 @media screen and (max-width: 1120px) {
@@ -1162,13 +1174,23 @@ section {
   min-width: 12.5em; }
 
 .text-wrapper .bullet-list li {
-  list-style-type: lower-latin;
-  margin-left: 1.063em; }
+  list-style-type: disc;
+  margin-left: 1.063em;
+  padding-bottom: 0.5em;
+  font-size: 1em; }
 
 .header-text .text-wrapper {
   max-width: 61.25em;
   margin: 0 auto;
   position: relative; }
+
+.header-text .opening-paragraph {
+  font-family: brix-slab, serif;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.header-text .notes {
+  font-size: 0.8em; }
 
 .intro-wrapper {
   max-width: 37.5em; }
@@ -1197,6 +1219,11 @@ section {
   position: relative; }
   .case-study-section-wrapper .text-wrapper {
     max-width: 37.5em; }
+  .case-study-section-wrapper .code-text-wrapper h4 {
+    padding: 1em 0 0.5em 0; }
+
+.gist-data {
+  max-height: 400px; }
 
 .columns-wrapper {
   display: -webkit-box;
