@@ -215,6 +215,21 @@ nav {
 	}
 }
 
+.social-media { 
+	margin-top: 20px; 
+	
+	a:active, a:visited, a:link {
+		color: white;
+		font-size: 1.5em;
+		padding-right: 10px;
+	}
+
+	a:hover {
+		color: $accent-peach;
+		transition: 0.3s ease;
+	}
+}
+
 // skills 
 .skills {
 	background-image: 
