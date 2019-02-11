@@ -160,7 +160,6 @@ nav {
 		font-style: normal;
 		color: $primary-header;
 		font-size: 6em;
-		text-transform: uppercase;
 	}
 
 	h2 {
@@ -212,6 +211,10 @@ nav {
 		flex-direction: column;
 		justify-content: center;
 		padding-left: 2em;
+	}
+
+	a:active, a:link, a:visited {
+		color: $accent-peach;
 	}
 }
 
@@ -457,6 +460,16 @@ nav {
 	&:hover .info {
 		opacity: 1;
 		transition: 0.5s ease;
+	}
+}
+
+.work-pdf {
+	width: 100%;
+	text-align: center;
+
+	.button-link {
+		width: 200px;
+		margin-top: 2em;
 	}
 }
 
