@@ -62,13 +62,13 @@ nav {
 
 	a:link, a:visited, a:active {
 		font-family: proxima-nova, sans-serif;
-		font-weight: 600;
+		font-weight: 800;
 		font-size: 0.875em;
 		text-decoration: none;
 		text-transform: uppercase;
 		line-height: 1.75em;
 		letter-spacing: 0.125em;
-		color: white;
+		color: $accent-peach;
 	}
 
 	a:hover {
@@ -140,37 +140,44 @@ nav {
 
 // hero image 
 .hero-content {
-	height: 80vh;
+	height: 65vh;
 	background-image: 
-	  url('../../../images/ocean_aerial.jpg');
+	  url('../../../images/ocean_aerial_light.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
 }
 
 .hero-text {
-	text-align: center;
-	height: calc(80vh - 12em);
+	height: calc(65vh - 15em);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 63em;
+	padding: 0 4.063em;
 
 	h1 {
-		font-weight: 300;
+		font-weight: 400;
 		font-style: normal;
 		color: $primary-header;
-		font-size: 6em;
+		font-size: 4.25em;
+		text-align: left;
 	}
 
 	h2 {
 		font-family: proxima-nova, sans-serif;
-		font-weight: 600;
-		font-style: normal;
+		font-weight: 700;
 		color: $secondary-header;
-		font-size: 1.25em;
+		font-size: 1.175em;
 		padding: 0.3em;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
+		text-align: left;
 	}
 }
 
@@ -475,7 +482,7 @@ nav {
 
 // contact
 .contact {
-	background-color: $primary-navy;
+	background-color: $primary-purple;
 	background-image: 
 	  url('../../../images/ocean_beach.jpg');
 	background-size: cover;
@@ -530,7 +537,7 @@ button {
 	font-size: 0.875em;
 	background-color: $accent-blue;
 	padding: 0.938em 2.5em;
-	color: $primary-navy;
+	color: $primary-purple;
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 50px;
@@ -596,16 +603,6 @@ button {
 
 // media queries
 @media screen and (max-width: 1440px) {
-	.hero-text {
-		h1 {
-			font-size: 5.5em;
-		}
-
-		h2 {
-			font-size: 1.313em;
-		}
-	}
-
 	.about-content {
 		max-width: 56em;
 	}
