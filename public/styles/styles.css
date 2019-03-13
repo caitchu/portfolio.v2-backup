@@ -155,10 +155,10 @@ section {
           justify-content: center;
   bottom: 3em; }
   .anchor-icon-row .anchor-icon {
-    width: 4em;
-    height: 4em;
-    border-radius: 4em;
-    background-color: #483e9c;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -173,7 +173,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 2em; }
+    width: 1.5em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -189,7 +189,7 @@ section {
     width: 3.125em;
     height: 3.125em;
     border-radius: 3.125em;
-    background-color: #483e9c;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,7 +217,7 @@ section {
 .fixed-nav {
   position: fixed;
   height: 4.375em;
-  background: #000337;
+  background: rgba(255, 255, 255, 0.95);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease; }
   .fixed-nav .logo {
@@ -276,7 +276,7 @@ nav {
     letter-spacing: 0.125em;
     color: #da2b10; }
   .nav-links a:hover {
-    color: #da2b10;
+    color: #332981;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease; }
 
@@ -332,7 +332,6 @@ nav {
   display: none; }
 
 .hero-content {
-  height: 65vh;
   background-image: url("../../../images/ocean_aerial_light.jpg");
   background-size: cover;
   background-position: center;
@@ -349,7 +348,6 @@ nav {
           align-items: center; }
 
 .hero-text {
-  height: calc(65vh - 15em);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,25 +361,28 @@ nav {
   margin: 0 auto;
   width: 100%;
   max-width: 63em;
-  padding: 0 4.063em; }
+  padding: 7em 0 15em 0; }
   .hero-text h1 {
     font-weight: 400;
     font-style: normal;
-    color: #483e9c;
-    font-size: 4.25em;
+    color: #332981;
+    font-size: 4em;
     text-align: left; }
   .hero-text h2 {
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     color: #da2b10;
-    font-size: 1.175em;
+    font-size: 1.1em;
     padding: 0.3em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: left; }
 
+.anchor-icon-row {
+  margin: 2em 0; }
+
 .body-content {
-  background-color: #193893;
+  background-color: #eff0fd;
   height: auto; }
 
 .about {
@@ -421,12 +422,13 @@ nav {
             justify-content: center;
     padding-left: 2em; }
   .about a:active, .about a:link, .about a:visited {
-    color: #da2b10; }
+    color: #da2b10;
+    text-decoration: none; }
 
 .social-media {
   margin-top: 20px; }
   .social-media a:active, .social-media a:visited, .social-media a:link {
-    color: white;
+    color: #332981;
     font-size: 1.5em;
     padding-right: 10px; }
   .social-media a:hover {
@@ -435,7 +437,7 @@ nav {
     transition: 0.3s ease; }
 
 .skills {
-  background-image: url("../../../images/ocean_shores.jpg");
+  background-image: url("../../../images/ocean_shores_light.jpg");
   background-size: cover;
   background-position: center; }
   .skills h3 {
@@ -528,7 +530,7 @@ nav {
       -ms-flex-align: center;
           align-items: center; }
   .toolkit-icon-wrapper i {
-    color: #abc8f8;
+    color: #da2b10;
     font-size: 1.875em; }
   .toolkit-icon-wrapper img {
     width: 1.875em; }
@@ -642,7 +644,7 @@ nav {
     margin-top: 2em; }
 
 .contact {
-  background-color: #483e9c;
+  background-color: #332981;
   background-image: url("../../../images/ocean_beach.jpg");
   background-size: cover;
   background-position: center; }
@@ -705,7 +707,7 @@ button {
   font-size: 0.875em;
   background-color: #9cb5ff;
   padding: 0.938em 2.5em;
-  color: #483e9c;
+  color: #332981;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 50px;
@@ -758,6 +760,8 @@ button {
     transition: 0.5s ease; }
 
 @media screen and (max-width: 1440px) {
+  .hero-text {
+    padding: 7em 4.063em 15em 4.063em; }
   .about-content {
     max-width: 56em; }
   .about-image img {
@@ -840,10 +844,6 @@ button {
       max-width: 4.375em; }
   .nav-links ul li {
     margin-left: 2.5em; }
-  .hero-text h1 {
-    font-size: 4.75em; }
-  .hero-text h2 {
-    font-size: 1.125em; }
   .about-content {
     max-width: 61.25em; }
   .about-image img {
@@ -1062,10 +1062,10 @@ section {
           justify-content: center;
   bottom: 3em; }
   .anchor-icon-row .anchor-icon {
-    width: 4em;
-    height: 4em;
-    border-radius: 4em;
-    background-color: #483e9c;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,7 +1080,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 2em; }
+    width: 1.5em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -1096,7 +1096,7 @@ section {
     width: 3.125em;
     height: 3.125em;
     border-radius: 3.125em;
-    background-color: #483e9c;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1122,10 +1122,10 @@ section {
     padding: 5.938em 2.188em; } }
 
 .content-body section:nth-child(odd) {
-  background-color: #193893; }
+  background-color: #eff0fd; }
 
 .content-body section:nth-child(even) {
-  background-color: #483e9c; }
+  background-color: #332981; }
 
 .fixed-project-menu {
   position: fixed;
@@ -1338,7 +1338,7 @@ section {
   position: absolute;
   top: 1.25em;
   right: 1.25em;
-  color: #483e9c; }
+  color: #332981; }
   .close:hover {
     cursor: pointer; }
 
@@ -1470,10 +1470,10 @@ section {
           justify-content: center;
   bottom: 3em; }
   .anchor-icon-row .anchor-icon {
-    width: 4em;
-    height: 4em;
-    border-radius: 4em;
-    background-color: #483e9c;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1488,7 +1488,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 2em; }
+    width: 1.5em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -1504,7 +1504,7 @@ section {
     width: 3.125em;
     height: 3.125em;
     border-radius: 3.125em;
-    background-color: #483e9c;
+    background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1530,28 +1530,28 @@ section {
     padding: 5.938em 2.188em; } }
 
 body {
-  background-color: #193893; }
+  background-color: #eff0fd; }
 
 h1 {
   font-family: brix-slab, serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-  color: #483e9c;
+  color: #332981;
   font-size: 3.75em; }
 
 h2 {
   font-family: brix-slab, serif;
-  font-weight: 300;
-  color: #483e9c;
-  font-size: 3.5em;
+  font-weight: 400;
+  color: #332981;
+  font-size: 3em;
   margin-bottom: 0.938em;
   text-align: center; }
 
 h3 {
   font-family: brix-slab, serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-  color: #483e9c;
+  color: #332981;
   font-size: 2.188em;
   margin-bottom: 0.313em; }
 
@@ -1570,14 +1570,14 @@ h5 {
   font-weight: 600;
   font-style: normal;
   font-size: 0.813em;
-  color: #abc8f8;
+  color: #da2b10;
   margin: 0.5em 0; }
 
 p {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: #262243;
   font-size: 1.063em;
   line-height: 1.375em;
   padding-bottom: 1.563em; }
@@ -1585,7 +1585,7 @@ p {
 ul {
   margin: 0;
   padding: 0.313em 0 1.25em 0;
-  color: white;
+  color: #262243;
   font-family: proxima-nova, sans-serif;
   font-size: 1.063em; }
 
@@ -1661,7 +1661,7 @@ textarea {
   background-color: #9cb5ff;
   padding: 1em 0.6em;
   margin: 0 0.156em;
-  color: #483e9c;
+  color: #332981;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 50px;
@@ -1683,7 +1683,7 @@ textarea {
   border: 0;
   text-transform: uppercase;
   letter-spacing: 0.125em;
-  color: #483e9c;
+  color: #332981;
   margin-top: 0; }
 
 blockquote {

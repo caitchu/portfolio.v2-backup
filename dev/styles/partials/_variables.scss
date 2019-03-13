@@ -1,13 +1,13 @@
-$primary-purple: #483e9c; 		// purple
-$secondary-navy: #193893;		// lighter navy
+$primary-purple: #332981; 		// darker purple
+$secondary-purple: #eff0fd;		// lighter purple
 $accent-blue: #9cb5ff; 			// light blue
 $accent-peach: #da2b10;			// stronger peach red
 
-$primary-header: #483e9c; 		// purple
+$primary-header: #332981; 		// purple
 $secondary-header: #da2b10; 	// stronger peach red
 $tertiary-header: #abc8f8; 		// lighter peach
 $text-links: #da2b10;			// stronger peach red
-$primary-text: #ffffff;			// white
+$primary-text: #262243;			// purple black
 
 // extensions
 %textLinks {
@@ -31,9 +31,9 @@ $primary-text: #ffffff;			// white
 	bottom: 3em;
 
 	.anchor-icon {
-		width: 4em;
-		height: 4em;
-		border-radius: 4em;
+		width: 3em;
+		height: 3em;
+		border-radius: 3em;
 		background-color: $primary-purple;
 		display: flex;
 		align-items: center;
@@ -46,7 +46,7 @@ $primary-text: #ffffff;			// white
 	}
 
 	.anchor-icon img {
-		width: 2em;
+		width: 1.5em;
 	}
 }
 

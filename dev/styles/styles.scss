@@ -4,13 +4,13 @@
 @import "partials/variables";
 
 body {
-	background-color: $secondary-navy;
+	background-color: $secondary-purple;
 }
 
 // main headers
 h1 { 
 	font-family: brix-slab, serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 	color: $primary-header;
 	font-size: 3.75em;
@@ -18,16 +18,16 @@ h1 {
 
 h2 {
 	font-family: brix-slab, serif;
-	font-weight: 300;
+	font-weight: 400;
 	color: $primary-header;
-	font-size: 3.5em;
+	font-size: 3em;
 	margin-bottom: 0.938em;
 	text-align: center;
 }
 
 h3 {
 	font-family: brix-slab, serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 	color: $primary-header;
 	font-size: 2.188em;
@@ -50,7 +50,7 @@ h5 {
 	font-weight: 600;
 	font-style: normal;
 	font-size: 0.813em;
-	color: #abc8f8;
+	color: $accent-peach;
 	margin: 0.5em 0;
 }
 
@@ -59,7 +59,7 @@ p {
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: white;
+	color: $primary-text;
 	font-size: 1.063em;
 	line-height: 1.375em;
 	padding-bottom: 1.563em;
@@ -69,7 +69,7 @@ p {
 ul {
 	margin: 0;
 	padding: 0.313em 0 1.25em 0;
-	color: white;
+	color: $primary-text;
 	font-family: proxima-nova, sans-serif;
 	font-size: 1.063em;
 }

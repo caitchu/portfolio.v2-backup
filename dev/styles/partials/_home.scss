@@ -4,7 +4,7 @@
 .fixed-nav {
 	position: fixed;
 	height: 4.375em;
-	background: rgba(0, 3, 55, 1);
+	background: rgba(255, 255, 255, 0.95);
 	transition: 0.5s ease;
 
 	.logo {
@@ -72,7 +72,7 @@ nav {
 	}
 
 	a:hover {
-		color: $accent-peach;
+		color: $primary-purple;
 		transition: 0.3s ease;
 	}
 }
@@ -140,7 +140,6 @@ nav {
 
 // hero image 
 .hero-content {
-	height: 65vh;
 	background-image: 
 	  url('../../../images/ocean_aerial_light.jpg');
 	background-size: cover;
@@ -152,20 +151,19 @@ nav {
 }
 
 .hero-text {
-	height: calc(65vh - 15em);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 63em;
-	padding: 0 4.063em;
+	padding: 7em 0 15em 0;
 
 	h1 {
 		font-weight: 400;
 		font-style: normal;
 		color: $primary-header;
-		font-size: 4.25em;
+		font-size: 4em;
 		text-align: left;
 	}
 
@@ -173,7 +171,7 @@ nav {
 		font-family: proxima-nova, sans-serif;
 		font-weight: 700;
 		color: $secondary-header;
-		font-size: 1.175em;
+		font-size: 1.1em;
 		padding: 0.3em;
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
@@ -182,6 +180,7 @@ nav {
 }
 
 .anchor-icon-row {
+	margin: 2em 0;
 	@extend %largeIcons; 
 }
 
@@ -190,7 +189,7 @@ nav {
 }
 
 .body-content {
-	background-color: $secondary-navy;
+	background-color: $secondary-purple;
 	height: auto;
 }
 
@@ -222,6 +221,7 @@ nav {
 
 	a:active, a:link, a:visited {
 		color: $accent-peach;
+		text-decoration: none;
 	}
 }
 
@@ -229,7 +229,7 @@ nav {
 	margin-top: 20px; 
 	
 	a:active, a:visited, a:link {
-		color: white;
+		color: $primary-purple;
 		font-size: 1.5em;
 		padding-right: 10px;
 	}
@@ -243,7 +243,7 @@ nav {
 // skills 
 .skills {
 	background-image: 
-	  url('../../../images/ocean_shores.jpg');
+	  url('../../../images/ocean_shores_light.jpg');
 	background-size: cover;
 	background-position: center;
 
@@ -327,7 +327,7 @@ nav {
 	align-items: center;
 
 	i {
-		color: #abc8f8;
+		color: $accent-peach;
 		font-size: 1.875em;
 	}
 
@@ -603,6 +603,10 @@ button {
 
 // media queries
 @media screen and (max-width: 1440px) {
+	.hero-text {
+		padding: 7em 4.063em 15em 4.063em;
+	}
+
 	.about-content {
 		max-width: 56em;
 	}
@@ -724,16 +728,6 @@ button {
 
 	.nav-links ul li {
 		margin-left: 2.5em;
-	}
-
-	.hero-text {
-		h1 {
-			font-size: 4.75em;
-		}
-
-		h2 {
-			font-size: 1.125em;
-		}
 	}
 
 	.about-content {

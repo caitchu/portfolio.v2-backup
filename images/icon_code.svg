@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.71 170.08"><defs><style>.cls-1{fill:none;stroke:#abc8f8;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>icon_code</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M3,3H182.71V139.73H3Z"/><path class="cls-1" d="M61.6,139.73v27.35"/><path class="cls-1" d="M124.11,139.73v27.35"/><path class="cls-1" d="M42.07,167.08H143.64"/><path class="cls-1" d="M182.71,116.29H3"/><path class="cls-1" d="M167.08,18.63H116.29"/><path class="cls-1" d="M108.48,18.63H89"/><path class="cls-1" d="M81.13,18.63H73.32"/><path class="cls-1" d="M65.51,18.63H57.69"/><path class="cls-1" d="M167.08,77.23H120.2"/><path class="cls-1" d="M112.39,77.23h-7.82"/><path class="cls-1" d="M96.76,77.23H89"/><path class="cls-1" d="M167.08,57.69H128"/><path class="cls-1" d="M120.2,57.69H73.32"/><path class="cls-1" d="M100.67,38.16H85"/><path class="cls-1" d="M167.08,38.16h-58.6"/><path class="cls-1" d="M77.23,38.16H18.63"/><path class="cls-1" d="M92.85,96.76h74.23"/><path class="cls-1" d="M63.55,71.37,77.23,85,63.55,98.71"/><path class="cls-1" d="M32.3,71.37,18.63,85,32.3,98.71"/><path class="cls-1" d="M40.11,104.57,55.74,65.51"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 185.7 170.1" style="enable-background:new 0 0 185.7 170.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#F2644D;}
+	.st2{fill:none;stroke:#1F2571;stroke-width:6;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="2.3,2.7 2.3,139.7 61.6,139.7 61.6,167.1 124.1,167.1 124.1,139.7 182.7,139.7 182.7,2.7 "/>
+<title>icon_code</title>
+<rect x="4.8" y="115.5" class="st1" width="177.9" height="24.2"/>
+<g>
+	<g id="Layer_2-2">
+		<path class="st2" d="M3,3h179.7v136.7H3V3z"/>
+		<path class="st2" d="M61.6,139.7v27.4"/>
+		<path class="st2" d="M124.1,139.7v27.4"/>
+		<path class="st2" d="M42.1,167.1h101.6"/>
+		<path class="st2" d="M182.7,116.3H3"/>
+		<path class="st2" d="M167.1,18.6h-50.8"/>
+		<path class="st2" d="M108.5,18.6H89"/>
+		<path class="st2" d="M81.1,18.6h-7.8"/>
+		<path class="st2" d="M65.5,18.6h-7.8"/>
+		<path class="st2" d="M167.1,77.2h-46.9"/>
+		<path class="st2" d="M112.4,77.2h-7.8"/>
+		<path class="st2" d="M96.8,77.2H89"/>
+		<path class="st2" d="M167.1,57.7H128"/>
+		<path class="st2" d="M120.2,57.7H73.3"/>
+		<path class="st2" d="M100.7,38.2H85"/>
+		<path class="st2" d="M167.1,38.2h-58.6"/>
+		<path class="st2" d="M77.2,38.2H18.6"/>
+		<path class="st2" d="M92.8,96.8h74.2"/>
+		<path class="st2" d="M63.5,71.4L77.2,85L63.5,98.7"/>
+		<path class="st2" d="M32.3,71.4L18.6,85l13.7,13.7"/>
+		<path class="st2" d="M40.1,104.6l15.6-39.1"/>
+	</g>
+</g>
+</svg>
