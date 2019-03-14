@@ -173,7 +173,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 1.5em; }
+    width: 1.25em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -186,9 +186,9 @@ section {
           justify-content: center;
   margin: 3em 0 0 0; }
   .small-anchor-icon-row .anchor-icon {
-    width: 3.125em;
-    height: 3.125em;
-    border-radius: 3.125em;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
     background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,7 +204,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .small-anchor-icon-row .anchor-icon img {
-    width: 1.563em; }
+    width: 1.25em; }
 
 @media screen and (max-width: 1040px) {
   section {
@@ -530,7 +530,7 @@ nav {
       -ms-flex-align: center;
           align-items: center; }
   .toolkit-icon-wrapper i {
-    color: #da2b10;
+    color: #332981;
     font-size: 1.875em; }
   .toolkit-icon-wrapper img {
     width: 1.875em; }
@@ -538,7 +538,7 @@ nav {
 .work-content {
   margin: 0 auto;
   width: 100%;
-  max-width: 64em; }
+  max-width: 75em; }
 
 .work-grid {
   display: -webkit-box;
@@ -551,8 +551,8 @@ nav {
           justify-content: center; }
 
 .portfolio-item {
-  border-radius: 5px;
-  width: calc(50% - 20px);
+  width: calc(33% - 20px);
+  height: 360px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,55 +561,68 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0.625em;
-  padding: 1.875em 1.563em;
+  margin: 0.5em;
+  padding: 1.5em;
   background-blend-mode: multiply; }
+  .portfolio-item figcaption p {
+    color: white; }
   .portfolio-item.scpartners {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/bridge.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/bridge.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-scp.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item.indus {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/construction.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/construction.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-indus.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item.safeaway {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/airplane.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/airplane.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-safeaway.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item.jobify {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/keyboard.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/keyboard.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-jobify.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item.mercyheart {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/charity.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/charity.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-charity.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item.fieldtrip {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c53923), to(#00065d)), url("../../../images/students.jpg");
-    background: linear-gradient(#c53923, #00065d), url("../../../images/students.jpg");
-    background-size: cover;
-    background-position: center; }
+    background-image: url("../../../images/presentation-fieldtrip.png");
+    background-size: 100%;
+    background-position: top; }
+  .portfolio-item.tollapp {
+    background-image: url("../../../images/presentation-tollapp.png");
+    background-size: 100%;
+    background-position: top; }
+  .portfolio-item.tkff {
+    background-image: url("../../../images/presentation-tkff.png");
+    background-size: 100%;
+    background-position: top; }
   .portfolio-item .title {
     position: absolute;
     text-align: center; }
     .portfolio-item .title h3 {
-      font-size: 2.5em;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 700;
+      font-size: 1.25em;
+      color: white;
+      padding: 0;
       margin: 0;
-      text-align: center; }
+      text-transform: uppercase;
+      letter-spacing: 0.125em; }
     .portfolio-item .title h4 {
       font-size: 1em;
-      padding: 0.313em 0; }
+      font-weight: 400;
+      color: white;
+      padding: 0;
+      text-transform: none;
+      letter-spacing: 0; }
   .portfolio-item .info {
     opacity: 0;
     text-align: left;
@@ -627,10 +640,8 @@ nav {
       font-weight: 700;
       margin-right: 0.813em; }
   .portfolio-item:hover {
-    background-color: #00043f;
-    background-image: none; }
-  .portfolio-item:hover .title {
-    display: none; }
+    background-blend-mode: multiply;
+    background-color: rgba(51, 41, 129, 0.6); }
   .portfolio-item:hover .info {
     opacity: 1;
     -webkit-transition: 0.5s ease;
@@ -829,7 +840,6 @@ button {
         -ms-flex-align: center;
             align-items: center; }
     .toolkit-icon-wrapper i {
-      color: #abc8f8;
       font-size: 1.875em; }
     .toolkit-icon-wrapper img {
       width: 1.875em; } }
@@ -1080,7 +1090,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 1.5em; }
+    width: 1.25em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -1093,9 +1103,9 @@ section {
           justify-content: center;
   margin: 3em 0 0 0; }
   .small-anchor-icon-row .anchor-icon {
-    width: 3.125em;
-    height: 3.125em;
-    border-radius: 3.125em;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
     background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1111,7 +1121,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .small-anchor-icon-row .anchor-icon img {
-    width: 1.563em; }
+    width: 1.25em; }
 
 @media screen and (max-width: 1040px) {
   section {
@@ -1488,7 +1498,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .anchor-icon-row .anchor-icon img {
-    width: 1.5em; }
+    width: 1.25em; }
 
 .small-anchor-icon-row {
   width: 100%;
@@ -1501,9 +1511,9 @@ section {
           justify-content: center;
   margin: 3em 0 0 0; }
   .small-anchor-icon-row .anchor-icon {
-    width: 3.125em;
-    height: 3.125em;
-    border-radius: 3.125em;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
     background-color: #332981;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1519,7 +1529,7 @@ section {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
   .small-anchor-icon-row .anchor-icon img {
-    width: 1.563em; }
+    width: 1.25em; }
 
 @media screen and (max-width: 1040px) {
   section {
@@ -1557,7 +1567,7 @@ h3 {
 
 h4 {
   font-family: proxima-nova, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.063em;
   text-transform: uppercase;
@@ -1570,7 +1580,7 @@ h5 {
   font-weight: 600;
   font-style: normal;
   font-size: 0.813em;
-  color: #da2b10;
+  color: #332981;
   margin: 0.5em 0; }
 
 p {

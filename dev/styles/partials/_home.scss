@@ -327,7 +327,7 @@ nav {
 	align-items: center;
 
 	i {
-		color: $accent-peach;
+		color: $primary-purple;
 		font-size: 1.875em;
 	}
 
@@ -340,7 +340,7 @@ nav {
 .work-content {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 64em;
+	max-width: 75em;
 }
 
 .work-grid {
@@ -350,69 +350,100 @@ nav {
 }
 
 .portfolio-item {
-	border-radius: 5px;
-	width: calc(50% - 20px);
+	width: calc(33% - 20px);
+	height: 360px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
-	margin: 0.625em;
-	padding: 1.875em 1.563em;
+	margin: 0.5em;
+	padding: 1.5em;
 	background-blend-mode: multiply;
 
+	figcaption p {
+		color: white;
+	}
+
 	&.scpartners {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/bridge.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/bridge.jpg');
+		background-image: url('../../../images/presentation-scp.png');
+		background-size: 100%;
+		background-position: top;
 	}
 
 	&.indus {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/construction.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/construction.jpg');
+		background-image: url('../../../images/presentation-indus.png');
+		background-size: 100%;
+		background-position: top;
 	}
 
 	&.safeaway {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/airplane.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/airplane.jpg');
+		background-image: url('../../../images/presentation-safeaway.png');
+		background-size: 100%;
+		background-position: top;
 	}
 
 	&.jobify {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/keyboard.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/keyboard.jpg');
+		background-image: url('../../../images/presentation-jobify.png');
+		background-size: 100%;
+		background-position: top;
+
 	}
 
 	&.mercyheart {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/charity.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/charity.jpg');
+		background-image: url('../../../images/presentation-charity.png');
+		background-size: 100%;
+		background-position: top;
 	}
 
 	&.fieldtrip {
-		background: linear-gradient(
-		    rgba(197, 57, 35, 1),
-		    rgba(0, 6, 93, 1)
-		  ), url('../../../images/students.jpg');
-		background-size: cover;
-		background-position: center;
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/students.jpg');
+		background-image: url('../../../images/presentation-fieldtrip.png');
+		background-size: 100%;
+		background-position: top;
+	}
+
+	&.tollapp {
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/students.jpg');
+		background-image: url('../../../images/presentation-tollapp.png');
+		background-size: 100%;
+		background-position: top;
+	}
+
+	&.tkff {
+		// background: linear-gradient(
+		//     rgba(197, 57, 35, 1),
+		//     rgba(0, 6, 93, 1)
+		//   ), url('../../../images/students.jpg');
+		background-image: url('../../../images/presentation-tkff.png');
+		background-size: 100%;
+		background-position: top;
 	}
 
 	& .title {
@@ -420,14 +451,23 @@ nav {
 		text-align: center;
 
 		h3 {
-			font-size: 2.5em;
+			font-family: proxima-nova, sans-serif;
+			font-weight: 700;
+			font-size: 1.25em;
+			color: white;
+			padding: 0;
 			margin: 0;
-			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.125em;
 		}
 
 		h4 {
 			font-size: 1em;
-			padding: 0.313em 0;
+			font-weight: 400;
+			color: white;
+			padding: 0;
+			text-transform: none;
+			letter-spacing: 0;
 		}
 	}
 
@@ -456,13 +496,14 @@ nav {
 	}
 
 	&:hover {
-		background-color: #00043f;
-		background-image: none;
+		background-blend-mode: multiply;
+		background-color: rgba(51, 41, 129, 0.6);
+		// background-image: none;
 	}
 
-	&:hover .title {
-		display: none;
-	}
+	// &:hover .title {
+	// 	display: none;
+	// }
 
 	&:hover .info {
 		opacity: 1;
@@ -706,7 +747,6 @@ button {
 		align-items: center;
 
 		i {
-			color: #abc8f8;
 			font-size: 1.875em;
 		}
 
