@@ -659,7 +659,7 @@ nav {
     margin-right: 0.813em; }
 
 .portfolio-item-content:hover {
-  background-color: #110a51; }
+  background-color: rgba(17, 10, 81, 0.5); }
 
 .work-pdf {
   width: 100%;
@@ -1528,7 +1528,7 @@ h2 {
   font-family: brix-slab, serif;
   font-weight: 400;
   color: #332981;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 0.938em;
   text-align: center; }
 
@@ -1682,9 +1682,9 @@ blockquote {
 
 @media screen and (min-width: 1400px) {
   h2 {
-    font-size: 3.875em; }
+    font-size: 3.25em; }
   h3 {
-    font-size: 2.625em; }
+    font-size: 2.5em; }
   h4 {
     font-size: 1.063em; }
   h5 {

@@ -20,7 +20,7 @@ h2 {
 	font-family: brix-slab, serif;
 	font-weight: 400;
 	color: $primary-header;
-	font-size: 2.5em;
+	font-size: 3em;
 	margin-bottom: 0.938em;
 	text-align: center;
 }
@@ -195,11 +195,11 @@ section {
 // media queries
 @media screen and (min-width: 1400px) {
 	h2 {
-		font-size: 3.875em;
+		font-size: 3.25em;
 	}
 
 	h3 {
-		font-size: 2.625em;
+		font-size: 2.5em;
 	}
 
 	h4 {

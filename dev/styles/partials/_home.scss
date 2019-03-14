@@ -507,7 +507,7 @@ nav {
 }
 
 .portfolio-item-content:hover {
-	background-color: rgba(17, 10, 81, 1);	
+	background-color: rgba(17, 10, 81, 0.5);	
 }
 
 .work-pdf {
@@ -1028,8 +1028,4 @@ button {
 			font-size: 0.875em;
 		}
 	}
-
-	// .portfolio-item .info h3 {
-	// 	font-size: 1.625em;
-	// }
 } // max-width: 480px
