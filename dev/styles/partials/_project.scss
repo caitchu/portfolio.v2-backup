@@ -1,16 +1,16 @@
 @import "partials/variables";
 
 .content-body section:nth-child(odd){
-	background-color: $secondary-purple;
+	background-color: #d1d4f3;
 }
 
 .content-body section:nth-child(even) {
-	background-color: $primary-purple;
+	background-color: $secondary-purple;
 }
 
 .fixed-project-menu {
 	position: fixed;
-	background: rgba(0, 3, 55, 1);
+	background: rgba(255, 255, 255, 0.95);
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@
 
 .header-content {
 	background-image: 
-	  url('../../../images/ocean_aerial.jpg');
+	  url('../../../images/ocean_aerial_light.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -42,7 +42,7 @@
 		font-family: proxima-nova, sans-serif;
 		font-size: 0.938em;
 		font-weight: 600;
-		color: $accent-blue;
+		color: $accent-peach;
 		text-decoration: none;
 	}
 
@@ -98,12 +98,13 @@
 		margin: 0;
 		padding: 0.625em 0;
 		text-align: left;
+		font-size: 3.25em;
 	}
 
 	ul {
 		font-family: proxima-nova, sans-serif;
 		list-style-type: none;
-		color: white;
+		color: $primary-text;
 	}
 
 	ul li {
@@ -149,7 +150,7 @@
 	ul {
 		margin: 0;
 		padding: 0.313em 0 1.25em 0;
-		color: white;
+		color: $primary-text;
 		font-family: proxima-nova, sans-serif;
 		font-size: 1.063em;
 	}
@@ -265,12 +266,11 @@
 
 .ideation-fw-background {
 	background: 
-		linear-gradient(rgba(0, 7, 98, 0.1), 
-			rgba(0, 7, 98, 0.1)), 
+		linear-gradient(rgba(239, 240, 253, 0.85), 
+			rgba(239, 240, 253, 0.85)), 
 		url('../../images/ft_sketches.jpg');
 	background-position: center;
 	background-repeat: repeat;
-	background-blend-mode: multiply;
 }
 
 @media screen and (max-width: 1040px) {

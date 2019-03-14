@@ -341,114 +341,94 @@ nav {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 75em;
+	position: relative;
 }
 
 .work-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	// display: flex;
+	// // flex-wrap: wrap;
+	// justify-content: center;
+	position: relative;
+	text-align: center;
 }
 
 .portfolio-item {
-	width: calc(33% - 20px);
-	height: 360px;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	margin: 0.5em;
-	padding: 1.5em;
-	background-blend-mode: multiply;
+	width: 30%;
+    float: left;
+    position: relative;
+    margin: 1.66%;
+    overflow: hidden;
+	padding-bottom: 30%;
+}
 
-	figcaption p {
-		color: white;
-	}
+.portfolio-item-content {
+	position: absolute;
+	height: 100%;
+	width: 100%; 
+}
 
+.portfolio-item {
 	&.scpartners {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/bridge.jpg');
 		background-image: url('../../../images/presentation-scp.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.indus {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/construction.jpg');
 		background-image: url('../../../images/presentation-indus.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.safeaway {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/airplane.jpg');
 		background-image: url('../../../images/presentation-safeaway.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.jobify {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/keyboard.jpg');
 		background-image: url('../../../images/presentation-jobify.png');
 		background-size: 100%;
 		background-position: top;
-
+		background-repeat: no-repeat;
 	}
 
 	&.mercyheart {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/charity.jpg');
 		background-image: url('../../../images/presentation-charity.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.fieldtrip {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/students.jpg');
 		background-image: url('../../../images/presentation-fieldtrip.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.tollapp {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/students.jpg');
 		background-image: url('../../../images/presentation-tollapp.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	&.tkff {
-		// background: linear-gradient(
-		//     rgba(197, 57, 35, 1),
-		//     rgba(0, 6, 93, 1)
-		//   ), url('../../../images/students.jpg');
 		background-image: url('../../../images/presentation-tkff.png');
 		background-size: 100%;
 		background-position: top;
+		background-repeat: no-repeat;
 	}
 
 	& .title {
 		position: absolute;
+		width: 100%;
 		text-align: center;
+		bottom: 1.25em;
 
 		h3 {
 			font-family: proxima-nova, sans-serif;
@@ -477,38 +457,57 @@ nav {
 		max-width: 400px;
 
 		h3 {
-			padding: 1em 0;
-			text-align: left;
+			font-family: proxima-nova, sans-serif;
+			font-weight: 700;
+			font-size: 1.25em;
+			color: white;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 0.125em;
+		}
+
+		h4 {
+			font-size: 1em;
+			font-weight: 400;
+			color: white;
+			padding: 0 0 5em 0;
+			text-transform: none;
+			letter-spacing: 0;
 		}
 
 		ul {
 			list-style-type: none;
 			margin-top: 1.875em;
+			color: white;
 		}
 
 		ul li {
 			display: inline-block;
 			font-size: 0.813em;
-			color: #f79c7d;
+			color: white;
 			font-weight: 700;
 			margin-right: 0.813em;
 		}
 	}
 
-	&:hover {
-		background-blend-mode: multiply;
-		background-color: rgba(51, 41, 129, 0.6);
-		// background-image: none;
-	}
+	// &:hover {
+	// 	background-color: rgba(17, 10, 81, 1);
+	// 	// background-image: none;
+	// }
 
 	// &:hover .title {
 	// 	display: none;
 	// }
 
-	&:hover .info {
-		opacity: 1;
-		transition: 0.5s ease;
-	}
+	// &:hover .info {
+	// 	opacity: 1;
+	// 	transition: 0.5s ease;
+	// }
+}
+
+.portfolio-item-content:hover {
+	background-color: rgba(17, 10, 81, 1);	
 }
 
 .work-pdf {
@@ -525,7 +524,7 @@ nav {
 .contact {
 	background-color: $primary-purple;
 	background-image: 
-	  url('../../../images/ocean_beach.jpg');
+	  url('../../../images/ocean_beach_light.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -541,9 +540,9 @@ nav {
 	justify-content: center;
 
 	p {
-		width: 30%;
-		margin-right: 2.5em;
+		width: 50%;
 		padding: 0.625em 0;
+		text-align: center;
 
 		& span {
 			font-weight: 700;
@@ -576,7 +575,7 @@ button {
 	font-family: proxima-nova, sans-serif;
 	font-weight: 600;
 	font-size: 0.875em;
-	background-color: $accent-blue;
+	background-color: $primary-purple;
 	padding: 0.938em 2.5em;
 	color: $primary-purple;
 	text-transform: uppercase;
@@ -587,15 +586,15 @@ button {
 	margin-top: 1.25em;
 
 	&:hover {
-		background-color: $secondary-header;
+		background-color: $accent-peach;
 		transition: 0.3s ease-in;
-		color: black;
+		color: white;
 	}
 }
 
 .copyright {
 	width: 100%;
-	background: rgba(0, 3, 55, 1);
+	background: rgba(51, 41, 129, 1);
 	padding: 1.563em;
 
 	p {
@@ -617,7 +616,7 @@ button {
 }
 
 .back-to-top {
-	background-color: $accent-blue;
+	background-color: $primary-purple;
 	width: 3.125em;
 	height: 3.125em;
 	border-radius: 100%;
@@ -677,29 +676,12 @@ button {
 	}
 
 	.portfolio-item {
-		border-radius: 5px;
-		width: calc(50% - 20px);
-		padding: 2em;
-
-		& .title h3, & .info h3 {
-			font-size: 2.25em;
-		}
-
-		& .info {
-			max-width: 25em;
-		}
-
-		& .info h3 {
-			padding: 1em 0;
-		}
-
-		& .info ul {
-			margin-top: 1.5em;
-		}
-
-		& .info ul li {
-			font-size: 0.85em;
-		}
+		width: 46%;
+	    float: left;
+	    position: relative;
+	    margin: 1.66%;
+	    overflow: hidden;
+		padding-bottom: 46%;
 	}
 
 	.contact-content {
@@ -713,27 +695,27 @@ button {
 		min-width: 2.5em;
 	}
 
-	.portfolio-item {
-		height: 18.125em;
+	// .portfolio-item {
+	// 	height: 18.125em;
 
-		& .info h3 {
-			padding: 1em 0 0.625em 0;
-			font-size: 2.25em;
-		}
+	// 	& .info h3 {
+	// 		padding: 1em 0 0.625em 0;
+	// 		font-size: 2.25em;
+	// 	}
 
-		& .info ul {
-			list-style-type: none;
-			margin-top: 0.625em;
-		}
+	// 	& .info ul {
+	// 		list-style-type: none;
+	// 		margin-top: 0.625em;
+	// 	}
 
-		& .info ul li {
-			margin-right: 0.625em;
-		}
+	// 	& .info ul li {
+	// 		margin-right: 0.625em;
+	// 	}
 
-		& .info .button-link {
-			width: 12.5em;
-		}
-	}
+	// 	& .info .button-link {
+	// 		width: 12.5em;
+	// 	}
+	// }
 } // max-width: 1120px
 
 @media screen and (max-width: 1100px) {
@@ -848,33 +830,33 @@ button {
 		max-width: 37.5em;
 	}
 
-	.portfolio-item {
-		height: 16.25em;
-		padding: 1.75em;
-	}
+	// .portfolio-item {
+	// 	height: 16.25em;
+	// 	padding: 1.75em;
+	// }
 
-	.portfolio-item .info {
-		h3 {
-			padding: 0.625em 0;
-			font-size: 1.75em;
-		}
+	// .portfolio-item .info {
+	// 	h3 {
+	// 		padding: 0.625em 0;
+	// 		font-size: 1.75em;
+	// 	}
 
-		p {
-			font-size: 0.938em;
-			margin: 0;
-			padding: 0 0 0.625em 0;
-		}
+	// 	p {
+	// 		font-size: 0.938em;
+	// 		margin: 0;
+	// 		padding: 0 0 0.625em 0;
+	// 	}
 
-		ul {
-			list-style-type: none;
-			margin-top: 0.938em;
-		}
+	// 	ul {
+	// 		list-style-type: none;
+	// 		margin-top: 0.938em;
+	// 	}
 
-		ul li {
-			margin-right: 0.8em;
-			font-size: 0.750em;
-		}
-	}
+	// 	ul li {
+	// 		margin-right: 0.8em;
+	// 		font-size: 0.750em;
+	// 	}
+	// }
 } // max-width: 890px
 
 @media screen and (max-width: 730px) {
@@ -902,7 +884,7 @@ button {
 
 	.portfolio-item {
 		width: 100%;
-		height: 18.75em;
+		padding-bottom: 100%;
 	}
 
 
@@ -1047,7 +1029,7 @@ button {
 		}
 	}
 
-	.portfolio-item .info h3 {
-		font-size: 1.625em;
-	}
+	// .portfolio-item .info h3 {
+	// 	font-size: 1.625em;
+	// }
 } // max-width: 480px
