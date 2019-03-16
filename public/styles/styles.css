@@ -216,7 +216,7 @@ section {
 .fixed-nav {
   position: fixed;
   height: 4.375em;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease; }
   .fixed-nav .logo {
@@ -620,43 +620,69 @@ nav {
     text-transform: uppercase;
     letter-spacing: 0.125em; }
   .portfolio-item .title h4 {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 400;
     color: white;
-    padding: 0;
-    text-transform: none;
-    letter-spacing: 0; }
+    padding: 0.5em 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
 
 .portfolio-item .info {
+  width: 100%;
+  height: 100%;
   opacity: 0;
   text-align: left;
-  max-width: 400px; }
+  padding: 1.5em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .portfolio-item .info h3 {
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-size: 1.25em;
     color: white;
     padding: 0;
-    margin: 0;
+    margin: 0 0 1em 0;
     text-transform: uppercase;
     letter-spacing: 0.125em; }
-  .portfolio-item .info h4 {
-    font-size: 1em;
-    font-weight: 400;
-    color: white;
-    padding: 0 0 5em 0;
-    text-transform: none;
-    letter-spacing: 0; }
   .portfolio-item .info ul {
     list-style-type: none;
-    margin-top: 1.875em;
+    margin: 1.875em 0 0 0;
+    padding: 0;
     color: white; }
   .portfolio-item .info ul li {
     display: inline-block;
     font-size: 0.813em;
     color: white;
     font-weight: 700;
-    margin-right: 0.813em; }
+    margin-right: 0.813em;
+    padding: 0; }
+  .portfolio-item .info p {
+    color: white; }
+  .portfolio-item .info .button-link {
+    background-color: #5A50AD; }
+  .portfolio-item .info .button-link:hover {
+    background-color: #da2b10; }
+
+.portfolio-item:hover {
+  background-color: #110a51;
+  background-image: none; }
+
+.portfolio-item:hover .title {
+  display: none; }
+
+.portfolio-item:hover .info {
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease; }
 
 .portfolio-item-content:hover {
   background-color: rgba(17, 10, 81, 0.5); }
@@ -665,7 +691,7 @@ nav {
   width: 100%;
   text-align: center; }
   .work-pdf .button-link {
-    width: 200px;
+    width: 240px;
     margin-top: 2em; }
 
 .contact {
@@ -805,7 +831,6 @@ button {
     width: 46%;
     float: left;
     position: relative;
-    margin: 1.66%;
     overflow: hidden;
     padding-bottom: 46%; }
   .contact-content {
@@ -854,7 +879,7 @@ button {
   .about-image img {
     width: 14.375em; }
   .about-text {
-    margin-left: 1.875em; }
+    margin-left: 1.75em; }
   .skills h4 {
     max-width: 500px;
     margin: 0.625em 0 0.313em 0; }
@@ -917,7 +942,20 @@ button {
         -ms-flex-pack: center;
             justify-content: center; }
   .toolkit-icons-row-wrapper {
-    max-width: 37.5em; } }
+    max-width: 37.5em; }
+  .portfolio-item .info h3 {
+    margin: 0; }
+  .portfolio-item .info h4 {
+    padding: 0; }
+  .portfolio-item .info p {
+    margin: 0;
+    padding: 0.4em 0 0.5em 0;
+    font-size: 1em; }
+  .portfolio-item .info ul li {
+    margin-right: 0.6em; }
+  .portfolio-item .info .button-link {
+    margin-top: 1em;
+    min-width: 150px; } }
 
 @media screen and (max-width: 730px) {
   .about-content {
@@ -931,13 +969,11 @@ button {
   .about-image img {
     width: 15.625em; }
   .about-text {
+    padding-left: 0;
     margin-left: 0; }
   .toolkit-icon-wrapper {
     width: calc(100%/7);
     min-width: 2.5em; }
-  .portfolio-item {
-    width: 100%;
-    padding-bottom: 100%; }
   .contact-content-flex-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -955,7 +991,21 @@ button {
     margin-top: 2.5em; }
   .form-button-wrapper {
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .portfolio-item {
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 90%; }
+  .portfolio-item .title h3 {
+    font-size: 1.5em; }
+  .portfolio-item .info {
+    max-width: 400px; }
+    .portfolio-item .info h3 {
+      font-size: 1.5em; }
+    .portfolio-item .info p {
+      font-size: 1em; } }
 
 @media screen and (max-width: 630px) {
   nav .logo {
@@ -987,6 +1037,8 @@ button {
     display: block; }
   .hero-text {
     height: calc(80vh - 7.5em); }
+  .skills h3 {
+    margin-top: 0; }
   .skill-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1019,13 +1071,24 @@ button {
     width: calc(100%/4);
     min-width: 2.5em; }
   .form-field-wrapper {
-    width: 100%; } }
+    width: 100%; }
+  .portfolio-item .title h3 {
+    font-size: 1.2em; }
+  .portfolio-item .info {
+    max-width: 400px; }
+    .portfolio-item .info h3 {
+      font-size: 1.5em; }
+    .portfolio-item .info p {
+      font-size: 1em; } }
 
 @media screen and (max-width: 480px) {
   .hero-text h1 {
     font-size: 3.5em; }
   .hero-text h2 {
-    font-size: 0.875em; } }
+    font-size: 0.875em; }
+  .portfolio-item {
+    width: 100%;
+    padding-bottom: 100%; } }
 
 .button-expand {
   font-family: proxima-nova, sans-serif;
@@ -1204,6 +1267,9 @@ section {
     letter-spacing: 0.063em;
     font-size: 0.938em;
     margin: 0.625em 0 0.313em; }
+  .intro-wrapper .button-link {
+    width: 140px;
+    margin-top: 1.5em; }
 
 .case-study-section-wrapper {
   max-width: 61.25em;
@@ -1213,6 +1279,21 @@ section {
     max-width: 37.5em; }
   .case-study-section-wrapper .code-text-wrapper h4 {
     padding: 1em 0 0.5em 0; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.side-image {
+  max-width: 330px;
+  margin-left: 20px; }
+  .side-image img {
+    width: 100%; }
 
 .gist-data {
   max-height: 400px; }

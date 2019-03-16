@@ -120,6 +120,11 @@
 		font-size: 0.938em;
 		margin: 0.625em 0 0.313em;
 	}
+
+	.button-link {
+		width: 140px;
+		margin-top: 1.5em;
+	}
 }
 
 .case-study-section-wrapper {
@@ -133,6 +138,19 @@
 
 	.code-text-wrapper h4 {
 		padding: 1em 0 0.5em 0;
+	}
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.side-image {
+	max-width: 330px;
+	margin-left: 20px;
+	img {
+		width: 100%;
 	}
 }
 
