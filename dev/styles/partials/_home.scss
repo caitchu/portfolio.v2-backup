@@ -157,7 +157,7 @@ nav {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 63em;
-	padding: 7em 0 15em 0;
+	padding: 2em 0 8em 0;
 
 	h1 {
 		font-weight: 400;
@@ -180,7 +180,7 @@ nav {
 }
 
 .anchor-icon-row {
-	margin: 2em 0;
+	margin: 1em 0;
 	@extend %largeIcons; 
 }
 
@@ -249,7 +249,7 @@ nav {
 
 	h3 {
 		text-align: center;
-		margin: 2.25em 0 1em 0;
+		margin: 1em 0 1em 0;
 	}
 
 	h4 {
@@ -652,7 +652,7 @@ button {
 // media queries
 @media screen and (max-width: 1440px) {
 	.hero-text {
-		padding: 7em 4.063em 15em 4.063em;
+		padding: 2em 4.063em 9em 4.063em;
 	}
 
 	.about-content {
@@ -964,7 +964,7 @@ button {
 	}
 
 	.hero-text {
-		height: calc(80vh - 7.5em);
+		height: calc(65vh - 7.5em);
 	}
 
 	.skills h3 {
